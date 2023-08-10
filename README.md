@@ -1,18 +1,16 @@
+
 # Obsidian Sample Plugin
 
-This is a sample plugin for Obsidian (https://obsidian.md).
+This is a my first plugin for Obsidian (https://obsidian.md).
 
-This project uses Typescript to provide type checking and documentation.
-The repo depends on the latest plugin API (obsidian.d.ts) in Typescript Definition format, which contains TSDoc comments describing what it does.
+This project uses Typescript to provide to provide several features;
 
-**Note:** The Obsidian API is still in early alpha and is subject to change at any time!
 
-This sample plugin demonstrates some of the basic functionality the plugin API can do.
-- Adds a ribbon icon, which shows a Notice when clicked.
-- Adds a command "Open Sample Modal" which opens a Modal.
-- Adds a plugin setting tab to the settings page.
-- Registers a global click event and output 'click' to the console.
-- Registers a global interval which logs 'setInterval' to the console.
+## features
+- [ ] my own live sync plugin, refer: [remotely-save](https://github.com/remotely-save/remotely-save), [Live Sync](https://github.com/vrtmrz/obsidian-livesync)
+- [ ] [recent files](https://github.com/tgrosinger/recent-files-obsidian)
+- [ ] set specific folder with different them(like transparent);
+- [ ] theme color smootly change;
 
 ## First time developing plugins?
 
@@ -58,7 +56,7 @@ Quick starting guide for new plugin devs:
 - Copy over `main.js`, `styles.css`, `manifest.json` to your vault `VaultFolder/.obsidian/plugins/your-plugin-id/`.
 
 ## Improve code quality with eslint (optional)
-- [ESLint](https://eslint.org/) is a tool that analyzes your code to quickly find problems. You can run ESLint against your plugin to find common bugs and ways to improve your code. 
+- [ESLint](https://eslint.org/) is a tool that analyzes your code to quickly find problems. You can run ESLint against your plugin to find common bugs and ways to improve your code.
 - To use eslint with this project, make sure to install eslint from terminal:
   - `npm install -g eslint`
 - To use eslint to analyze this project use this command:
