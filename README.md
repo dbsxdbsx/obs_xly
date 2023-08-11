@@ -11,6 +11,7 @@ This project uses Typescript to provide to provide several features;
 - [ ] [recent files](https://github.com/tgrosinger/recent-files-obsidian)
 - [ ] set specific folder with different them(like transparent);
 - [ ] theme color smootly change;
+- [ ] add hot key to do something;
 
 ## First time developing plugins?
 
