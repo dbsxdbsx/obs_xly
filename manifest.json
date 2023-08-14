@@ -2,7 +2,7 @@
 	"id": "xly",
 	"name": "xly",
 	"version": "0.0.1",
-	"minAppVersion": "0.15.0",
+	"minAppVersion": "1.3.7",
 	"description": "This is my first plugin!",
 	"author": "dbsxdbsx",
 	"authorUrl": "https://github.com/dbsxdbsx/obs_xly/blob/master/README.md",
