@@ -12,5 +12,3 @@ This project uses Typescript to provide to provide several features;
 -   [ ] set specific folder with different them(like transparent);
 -   [ ] theme color smootly change;
 -   [ ] add hot key to do something;
-
-

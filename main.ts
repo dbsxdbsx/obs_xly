@@ -14,11 +14,13 @@ import {
 interface MyPluginSettings {
 	showNoteTime: boolean;
 	activateMacro: boolean;
+	translucentFolderName: string;
 }
 
 const DEFAULT_SETTINGS: MyPluginSettings = {
 	showNoteTime: false,
 	activateMacro: false,
+	translucentFolderName: "",
 };
 
 export default class MyPlugin extends Plugin {
@@ -42,6 +44,8 @@ export default class MyPlugin extends Plugin {
 				},
 			),
 		);
+
+		
 
 		// this.app.workspace.on("codemirror", (cm: CodeMirror.Editor) => {
 		// 	const handler = (cm: CodeMirror.Editor, event: KeyboardEvent) => {
@@ -202,6 +206,20 @@ class SampleSettingTab extends PluginSettingTab {
 					),
 			);
 
+		new Setting(containerEl)
+			.setName("Set Translucent Folder")
+			.setDesc(
+				"Make folder with specific name translucent(useful for attachment folders)",
+			)
+			.addText((text) =>
+				text
+					.setPlaceholder("Enter the folder name")
+					.setValue(this.plugin.settings.translucentFolderName)
+					.onChange(async (value) => {
+						this.plugin.settings.translucentFolderName = value;
+						await this.plugin.saveSettings();
+					}),
+			);
 		// new Setting(containerEl)
 		// 	.setName("Activate Macro")
 		// 	.setDesc("activate some hot key in notes")
